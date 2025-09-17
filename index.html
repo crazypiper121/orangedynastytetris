@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris Dark 🍊</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="game">
+      <canvas id="board"></canvas>
+
+      <div class="stats">
+        <div>Score: <span id="score">0</span></div>
+        <div>Level: <span id="level">1</span></div>
+        <div>Lines: <span id="lines">0 / 5</span></div>
+        <div>Oranges: <span id="oranges">0 🍊</span></div>
+      </div>
+
+      <!-- Mobile Controls -->
+      <div class="controls">
+        <div class="row">
+          <button id="left">◀</button>
+          <button id="rotate">⟳</button>
+          <button id="right">▶</button>
+        </div>
+        <div class="row">
+          <button id="down">▼</button>
+          <button id="drop">⤓</button>
+        </div>
+        <button id="restart">⟳ Restart</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
